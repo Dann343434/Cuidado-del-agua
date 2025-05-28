@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaña: Cuidado del Agua</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #00bcd4;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      animation: slideLR 3s infinite alternate;
+    }
+
+    header p strong {
+      display: inline-block;
+      animation: bounce 2s infinite;
+    }
+
+    header p span {
+      display: inline-block;
+      animation: glow 2s ease-in-out infinite;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00796b;
+      margin-top: 2rem;
+      border-bottom: 2px solid #4db6ac;
+      padding-bottom: 0.5rem;
+      animation: slideUp 1s ease-in-out;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 2rem;
+    }
+
+    .card {
+      background-color: #f1f8e9;
+      border-left: 6px solid #8bc34a;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .btn-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .btn {
+      background-color: #00796b;
+      color: white;
+      padding: 1rem 2rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #004d40;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideLR {
+      0% { transform: translateX(-20px); }
+      100% { transform: translateX(20px); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes glow {
+      0% { color: #fff; text-shadow: 0 0 5px #fff, 0 0 10px #00e5ff, 0 0 20px #00e5ff; }
+      50% { color: #e0f7fa; text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff, 0 0 30px #00e5ff; }
+      100% { color: #fff; text-shadow: 0 0 5px #fff, 0 0 10px #00e5ff, 0 0 20px #00e5ff; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Campaña de Concientización: El Cuidado del Agua</h1>
+    <p><strong>Grupo 619 - Colegio de Bachilleres Plantel 10 Aeropuerto</strong><br>
+    Materia: Ecología | <span>Maestra: Martha Huerta Cortés</span></p>
+  </header>
+
+  <section>
+    <h2>Integrantes del proyecto</h2>
+    <ul>
+      <li>Erween Daniel Hernández Alvarado</li>
+      <li>Paulina Ximena Mendoza García</li>
+      <li>Ángeles Eloísa Aguirre Tenorio</li>
+      <li>Pamela Atzin Martínez Morales</li>
+      <li>Ana Kelly Aguilar Suárez</li>
+      <li>Valentina Peralta López</li>
+      <li>Cristofer Maciel Gómez Ramírez</li>
+    </ul>
+
+    <h2>1. Introducción general</h2>
+    <div class="card">
+      Nosotros somos un grupo de 7 personas comprometidas con una campaña muy importante: la concientización sobre el cuidado del agua. El agua es un recurso vital que todos usamos, pero no siempre cuidamos. Hoy queremos compartir con ustedes por qué es tan importante protegerla, y qué podemos hacer desde nuestro día a día.
+    </div>
+
+    <h2>2. ¿Por qué es importante cuidar el agua?</h2>
+    <div class="card">
+      El agua es esencial para todo: para beber, cocinar, sembrar, limpiar, y para que los ecosistemas funcionen. Aunque tres cuartas partes del planeta están cubiertas de agua, solo el 3% es dulce, y de ese 3%, gran parte no está disponible fácilmente. Por eso, cada gota cuenta. Si no la cuidamos, podríamos enfrentar graves problemas como sequías, escasez y conflictos.
+    </div>
+
+    <h2>3. ¿Cómo estamos desperdiciando el agua?</h2>
+    <div class="card">
+      <ul>
+        <li>Dejamos la llave abierta al lavar los dientes.</li>
+        <li>Nos bañamos por mucho tiempo.</li>
+        <li>Lavamos el coche con manguera en lugar de usar cubeta.</li>
+        <li>Ignoramos fugas que pueden desperdiciar litros y litros al día.</li>
+        <li>También hay desperdicio en la agricultura, la industria y por la falta de infraestructura adecuada.</li>
+      </ul>
+    </div>
+
+    <h2>4. ¿Qué podemos hacer?</h2>
+    <div class="card">
+      <ul>
+        <li>Cerrar la llave mientras cepillamos los dientes.</li>
+        <li>Tomar duchas más cortas.</li>
+        <li>Reparar fugas en casa.</li>
+        <li>Regar las plantas en la noche o muy temprano.</li>
+        <li>Usar electrodomésticos eficientes.</li>
+      </ul>
+    </div>
+
+    <h2>5. ¿Qué hicimos como grupo?</h2>
+    <div class="card">
+      Como parte de esta campaña, creamos un cartel y folletos informativos. El cartel resume los puntos clave sobre la importancia del agua y cómo cuidarla. Los folletos tienen consejos prácticos para aplicar en casa. La idea es que esta información llegue a más personas.
+    </div>
+
+    <h2>6. Invitación a actuar</h2>
+    <div class="card">
+      Queremos invitarlos a que se unan al cambio. No basta con saber que hay un problema: hay que actuar. Cada acción cuenta, y si todos cuidamos el agua, también estamos cuidando nuestro futuro.
+    </div>
+
+    <h2>7. Cierre y agradecimiento</h2>
+    <div class="card">
+      Muchas gracias por su atención. Esperamos que este mensaje les haya llegado y que juntos podamos hacer una diferencia. Si quieren un folleto o tienen preguntas, con gusto se los damos. ¡Cuidar el agua es cuidar la vida!
+    </div>
+
+    <h2>Datos curiosos sobre el agua</h2>
+    <div class="card">
+      <ul>
+        <li>El 97.5% del agua del planeta es salada. Solo el 2.5% es dulce.</li>
+        <li>Una gotera puede desperdiciar hasta 30 litros de agua al día.</li>
+        <li>Se necesitan 15,000 litros de agua para producir 1 kg de carne de res.</li>
+        <li>Una persona usa entre 100 y 200 litros de agua al día en casa.</li>
+        <li>El agua actual es la misma que existía en tiempos de los dinosaurios.</li>
+        <li>Dejar el grifo abierto al cepillarse puede gastar hasta 6 litros por minuto.</li>
+        <li>Los inodoros antiguos gastan hasta 16 litros por descarga.</li>
+        <li>Más de 2 mil millones de personas no tienen acceso a agua potable segura.</li>
+        <li>Reutilizar el agua de lluvia puede ahorrar cientos de litros al mes.</li>
+        <li>Las plantas nativas requieren menos agua y ayudan a conservarla.</li>
+      </ul>
+    </div>
+
+    <div class="btn-container">
+      <a href="URL_DEL_FOLLETO" target="_blank"><button class="btn">Clic aquí para visualizar folleto</button></a>
+      <a href="URL_DE_LA_LAMINA" target="_blank"><button class="btn">Clic aquí para visualizar la lámina</button></a>
+    </div>
+  </section>
+</body>
+</html>
