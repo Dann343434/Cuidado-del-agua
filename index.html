@@ -14,34 +14,42 @@
       color: #333;
       line-height: 1.6;
     }
-
     header {
       background-color: #00bcd4;
       color: white;
       padding: 2rem;
       text-align: center;
     }
-
-    header h1 {
-      animation: slideLR 3s infinite alternate;
+    .titulo-animado {
+      display: inline-block;
+      animation: slide-left-right 4s infinite alternate ease-in-out;
     }
-
-    header p strong {
+    .grupo-rebote {
       display: inline-block;
       animation: bounce 2s infinite;
     }
-
-    header p span {
+    .maestra-efecto {
       display: inline-block;
-      animation: glow 2s ease-in-out infinite;
+      animation: shine 3s infinite;
     }
-
+    @keyframes slide-left-right {
+      0% { transform: translateX(-10px); }
+      100% { transform: translateX(10px); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes shine {
+      0% { color: #fff; text-shadow: none; }
+      50% { color: #ffff8d; text-shadow: 0 0 10px #ffee58; }
+      100% { color: #fff; text-shadow: none; }
+    }
     section {
       padding: 2rem;
       max-width: 900px;
       margin: auto;
     }
-
     h2 {
       color: #00796b;
       margin-top: 2rem;
@@ -49,16 +57,13 @@
       padding-bottom: 0.5rem;
       animation: slideUp 1s ease-in-out;
     }
-
     p {
       margin: 1rem 0;
     }
-
     ul {
       list-style-type: disc;
       padding-left: 2rem;
     }
-
     .card {
       background-color: #f1f8e9;
       border-left: 6px solid #8bc34a;
@@ -67,61 +72,37 @@
       border-radius: 5px;
       animation: fadeIn 1.5s ease-in;
     }
-
-    .btn-container {
-      text-align: center;
-      margin-top: 2rem;
-    }
-
-    .btn {
-      background-color: #00796b;
-      color: white;
-      padding: 1rem 2rem;
-      margin: 0.5rem;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-
-    .btn:hover {
-      background-color: #004d40;
-      transform: scale(1.05);
-    }
-
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
-
     @keyframes slideUp {
       from { transform: translateY(30px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
-
-    @keyframes slideLR {
-      0% { transform: translateX(-20px); }
-      100% { transform: translateX(20px); }
+    .boton-container {
+      text-align: center;
+      margin: 2rem 0;
     }
-
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-
-    @keyframes glow {
-      0% { color: #fff; text-shadow: 0 0 5px #fff, 0 0 10px #00e5ff, 0 0 20px #00e5ff; }
-      50% { color: #e0f7fa; text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff, 0 0 30px #00e5ff; }
-      100% { color: #fff; text-shadow: 0 0 5px #fff, 0 0 10px #00e5ff, 0 0 20px #00e5ff; }
+    .boton-container button {
+      padding: 1rem 2rem;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin: 0.5rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Campaña de Concientización: El Cuidado del Agua</h1>
-    <p><strong>Grupo 619 - Colegio de Bachilleres Plantel 10 Aeropuerto</strong><br>
-    Materia: Ecología | <span>Maestra: Martha Huerta Cortés</span></p>
+    <h1 class="titulo-animado">Campaña de Concientización: El Cuidado del Agua</h1>
+    <p>
+      <span class="grupo-rebote"><strong>Grupo 619 - Colegio de Bachilleres Plantel 10 Aeropuerto</strong></span><br>
+      <span class="maestra-efecto">Materia: Ecología | Maestra: Martha Huerta Cortés</span>
+    </p>
   </header>
 
   <section>
@@ -199,10 +180,15 @@
       </ul>
     </div>
 
-    <div class="btn-container">
-      <a href="https://www.canva.com/design/DAGoxL_BoWk/XoMCgTKZFOFlo36fEhqNOQ/view?utm_content=DAGoxL_BoWk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7d67b86709" target="_blank"><button class="btn">Clic aquí para visualizar folleto</button></a>
-      <a href="URL_DE_LA_LAMINA" target="_blank"><button class="btn">Clic aquí para visualizar la lámina</button></a>
+    <div class="boton-container">
+      <a href="https://www.canva.com/design/DAGoxL_BoWk/XoMCgTKZFOFlo36fEhqNOQ/view?utm_content=DAGoxL_BoWk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7d67b86709" target="_blank">
+        <button>Click aquí para visualizar folleto</button>
+      </a>
+      <a href="https://www.canva.com/design/DAGpDbRz0yc/8sDP8ArLyUcgmQkkubCVdA/view?utm_content=DAGpDbRz0yc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4193bf4ab8" target="_blank">
+        <button>Click aquí para visualizar la lámina</button>
+      </a>
     </div>
+
   </section>
 </body>
 </html>
